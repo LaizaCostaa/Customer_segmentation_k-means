@@ -1,16 +1,23 @@
-# Customer_segmentation_k-means
-Segmentação de clientes usando K-means
+## Customer Segmentation with K-Means Clustering
 
+This repository provides a Python-based implementation of the K-Means clustering algorithm for customer segmentation. The code utilizes the scikit-learn library for efficient and robust clustering.
 
-Este projeto foi desenvolvido para aprimorar meu aprendizado na disciplina de Mineração de dados, do curso de Ciência de Dados. Os dados foram obtidos da plataforma Kaggle.
+## Main Features
 
-Contexto (adaptado e traduzido da descrição do Kaggle)
+- **Customer Segmentation:** The code performs customer segmentation by grouping customers based on their purchasing behavior and other relevant attributes.
+- **K-Means Algorithm:** The core of the code is the K-Means algorithm, a popular unsupervised machine learning technique for clustering data points into groups.
+- **Data Visualization:** The code includes basic data visualization functionalities to help understand the clustering results.
 
-Determinado Shopping possui uma lista de clientes membros, que contém alguns dados básicos como Customer ID, age, gender, annual income and spending score. Spending Score é algo que você atribui ao cliente com base em parâmetros definidos, como comportamento do cliente e dados de compra
+## Technical Details
 
-Problema* texto em negrito: Você é responsavel por levantar insights e oferecer informações ao proprietário do shopping a entender os clientes, como quem pode ser facilmente convergido [Clientes-Alvo], para que seja possível levar essas informações à equipe de marketing e planejar a estratégia de acordo.
-Objetivo: Aplicar um modelo de Machine Learning ao conjunto de dados, que ajude a responder as seguintes perguntas:
+The code implements the K-Means algorithm using the `sklearn.cluster.KMeans` class. The algorithm works by iteratively assigning data points to clusters based on their proximity to the cluster centroids. The code defines a function `calculate_cluster_centers` to determine the centroids of each cluster.
 
-Como realizar a segmentação de clientes usando um algoritmo de aprendizado de máquina (Agrupamento KMeans) em Python da maneira mais simples.
-Quem são seus clientes-alvo com os quais você pode iniciar uma estratégia de marketing [fáceis de abordar].
+The code also includes a function `plot_clusters` to visualize the clusters. This function uses matplotlib to plot the data points and their assigned cluster labels.
 
+## Final Considerations
+
+The code provides a basic framework for customer segmentation using K-Means. Further improvements could include:
+
+- **Feature Engineering:** Exploring additional features and attributes to improve the accuracy of the segmentation.
+- **Hyperparameter Tuning:** Optimizing the K-Means algorithm's hyperparameters for better performance.
+- **Ensemble Methods:** Combining multiple K-Means models for enhanced accuracy.
