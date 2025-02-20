@@ -15,22 +15,25 @@ Customer segmentation is essential for targeted marketing and improved customer 
 
 ## Technical Details
 
-The code implements the K-Means algorithm using the `sklearn.cluster.KMeans` class. The algorithm works by iteratively assigning data points to clusters based on their proximity to the cluster centroids. The code defines a function `calculate_cluster_centers` to determine the centroids of each cluster.
-
-The code also includes a function `plot_clusters` to visualize the clusters. This function uses matplotlib to plot the data points and their assigned cluster labels.
+-  Programming Language: Python
+    -  ibraries:
+    -  scikit-learn for the K-Means implementation.
+    -  matplotlib for data visualization.
+    -  Pandas for data manipulation (if applicable).
+  
+-  Implementation: The project includes functions such as calculate_cluster_centers to compute cluster centroids and plot_clusters to visualize the segmented data.
 
 ## Usage
 
 Open the Jupyter Notebook file customer_segmentation_k_means_pynb.ipynb to interact with the code.
 Modify parameters such as the number of clusters or input data as needed to tailor the segmentation to your dataset.
 
-## Final Considerations
+## Future Improvements
 
-The code provides a basic framework for customer segmentation using K-Means. Further improvements could include:
-
-- **Feature Engineering:** Exploring additional features and attributes to improve the accuracy of the segmentation.
-- **Hyperparameter Tuning:** Optimizing the K-Means algorithm's hyperparameters for better performance.
-- **Ensemble Methods:** Combining multiple K-Means models for enhanced accuracy.
+-  Feature Engineering: Explore additional customer attributes to enhance segmentation.
+-  Hyperparameter Tuning: Optimize K-Means parameters (e.g., number of clusters, initialization methods) for improved performance.
+-  Advanced Visualization: Integrate interactive visualizations for deeper data exploration.
+-  Integration: Expand the project to include real-time data feeds for dynamic segmentation analysis.
 
 ## About
 This project was developed for the course "Mineração de Dados" (Data Mining) and demonstrates a basic framework for performing customer segmentation using unsupervised machine learning techniques.
